@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komposia - Solusi Pengelolaan Sampah Rumah Tangga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/logo.jpg" alt="komposia-logo" class="logo-icon">
+                Komposia
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#achievements">Pencapaian</a></li>
+                <li><a href="#solution">Layanan</a></li>
+                <li><a href="#partners">Mitra</a></li>
+                <li><a href="#team">Tim</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">🌱 Menuju Indonesia Bebas Sampah</div>
+                <h1>Transformasi Sampah Menjadi <span class="highlight">Nilai Ekonomi</span></h1>
+                <p>Komposia menghadirkan solusi komprehensif untuk pengelolaan sampah rumah tangga. Dari organik menjadi kompos berkualitas, hingga anorganik yang tersalurkan ke industri daur ulang.</p>
+                <div class="hero-buttons">
+                    <a href="#solution" class="cta-button">
+                        Jelajahi Layanan
+                        <span>→</span>
+                    </a>
+                    <a href="#contact" class="cta-button cta-secondary">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">1,500+</div>
+                        <div class="stat-label">Rumah Tangga Terlayani</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Desa Mitra</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Ton Sampah Terkelola</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Mitra Industri</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">🏆 Pencapaian Kami</div>
+                <h2 class="section-title">Dampak Nyata yang Telah Kami Ciptakan</h2>
+                <p class="section-subtitle">Komitmen kami dalam menciptakan ekosistem pengelolaan sampah berkelanjutan telah menghasilkan perubahan signifikan</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card fade-in">
+                    <span class="achievement-icon">🏠</span>
+                    <div class="achievement-number">1,500+</div>
+                    <div class="achievement-label">Rumah Tangga Aktif</div>
+                </div>
+                <div class="achievement-card fade-in">
+                    <span class="achievement-icon">🌾</span>
+                    <div class="achievement-number">20+</div>
+                    <div class="achievement-label">Desa Bermitra</div>
+                </div>
+                <div class="achievement-card fade-in">
+                    <span class="achievement-icon">♻️</span>
+                    <div class="achievement-number">15+</div>
+                    <div class="achievement-label">Ton Sampah/Bulan</div>
+                </div>
+                <div class="achievement-card fade-in">
+                    <span class="achievement-icon">🏭</span>
+                    <div class="achievement-number">10+</div>
+                    <div class="achievement-label">Mitra Industri</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="problem-content">
+                <div class="problem-text fade-in">
+                    <div class="section-badge">⚠️ Tantangan Kita</div>
+                    <h2>Krisis Sampah yang Mendesak</h2>
+                    <p>Indonesia menghasilkan jutaan ton sampah setiap tahun, namun sebagian besar tidak terkelola dengan baik. Ini bukan hanya masalah lingkungan, tetapi juga peluang ekonomi yang terbuang.</p>
+                    
+                    <ul class="problem-list">
+                        <li>
+                            <span class="problem-icon">🗑️</span>
+                            <div>
+                                <strong>Sampah organik menimbulkan masalah</strong><br>
+                                <span style="color: #888; font-size: 0.95rem;">Bau, hama, dan limbah berbahaya di rumah tangga</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="problem-icon">💸</span>
+                            <div>
+                                <strong>Nilai ekonomi terbuang</strong><br>
+                                <span style="color: #888; font-size: 0.95rem;">Sampah anorganik bernilai jual tidak termanfaatkan</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="problem-icon">🚮</span>
+                            <div>
+                                <strong>TPA semakin penuh</strong><br>
+                                <span style="color: #888; font-size: 0.95rem;">Sampah tercampur dan menumpuk tanpa solusi</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="problem-stats-visual">
+                    <div class="stat-card-large fade-in">
+                        <div class="stat-number">65M</div>
+                        <div class="stat-label">Ton Sampah/Tahun</div>
+                    </div>
+                    <div class="stat-card-large fade-in">
+                        <div class="stat-number">41%</div>
+                        <div class="stat-label">Sampah Organik</div>
+                    </div>
+                    <div class="stat-card-large fade-in">
+                        <div class="stat-number">34%</div>
+                        <div class="stat-label">Sampah Anorganik</div>
+                    </div>
+                    <div class="stat-card-large fade-in">
+                        <div class="stat-number">70M</div>
+                        <div class="stat-label">Rumah Tangga</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">💡 Solusi Kami</div>
+                <h2 class="section-title">Layanan Terintegrasi untuk Rumah Tangga</h2>
+                <p class="section-subtitle">Dua layanan utama yang dirancang untuk mengelola sampah Anda secara maksimal dan berkelanjutan</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-header">
+                        <div class="service-icon-box">🌱</div>
+                        <div>
+                            <h3>Komposia Teba</h3>
+                            <p style="margin: 0; color: #888; font-size: 0.95rem;">Pengelolaan Sampah Organik</p>
+                        </div>
+                    </div>
+                    <p>Solusi komposter rumah tangga dengan teknologi penguraian modern. Ubah sampah dapur Anda menjadi kompos berkualitas tanpa bau dan hama.</p>
+                    
+                    <ul class="service-features">
+                        <li>Komposter modern dengan desain praktis</li>
+                        <li>Eco enzym untuk mempercepat penguraian</li>
+                        <li>Mikroba pengurai berkualitas tinggi</li>
+                        <li>Aktivator kompos untuk hasil optimal</li>
+                        <li>Panduan lengkap dan support tim ahli</li>
+                        <li>Teba komunal untuk desa dan perumahan</li>
+                    </ul>
+
+                    <div class="service-price">
+                        💰 Mulai dari Rp 50.000 - Rp 350.000
+                    </div>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-header">
+                        <div class="service-icon-box">♻️</div>
+                        <div>
+                            <h3>Komposia Angkut</h3>
+                            <p style="margin: 0; color: #888; font-size: 0.95rem;">Pengelolaan Sampah Anorganik</p>
+                        </div>
+                    </div>
+                    <p>Layanan penjemputan sampah anorganik yang langsung tersalurkan ke industri daur ulang. Dapatkan nilai ekonomis dari sampah Anda.</p>
+                    
+                    <ul class="service-features">
+                        <li>Penjemputan terjadwal ke rumah Anda</li>
+                        <li>Tidak perlu mencari pengepul sendiri</li>
+                        <li>Penyaluran langsung ke industri terpercaya</li>
+                        <li>Sistem pembayaran transparan</li>
+                        <li>Kontribusi untuk ekonomi sirkular</li>
+                        <li>Laporan dampak lingkungan Anda</li>
+                    </ul>
+
+                    <div class="service-price">
+                        🚚 Gratis penjemputan untuk area terlayani
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">🤝 Mitra Kami</div>
+                <h2 class="section-title">Bersama Membangun Ekosistem Berkelanjutan</h2>
+                <p class="section-subtitle">Kolaborasi dengan berbagai pihak untuk menciptakan dampak yang lebih besar</p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card fade-in">
+                    <div>
+                        <div class="partner-logo">🏛️</div>
+                        <div class="partner-name">Pemerintah Desa</div>
+                    </div>
+                </div>
+                <div class="partner-card fade-in">
+                    <div>
+                        <div class="partner-logo">🏭</div>
+                        <div class="partner-name">Industri Daur Ulang</div>
+                    </div>
+                </div>
+                <div class="partner-card fade-in">
+                    <div>
+                        <div class="partner-logo">📦</div>
+                        <div class="partner-name">Pengepul Lokal</div>
+                    </div>
+                </div>
+                <div class="partner-card fade-in">
+                    <div>
+                        <div class="partner-logo">🏘️</div>
+                        <div class="partner-name">Perumahan</div>
+                    </div>
+                </div>
+                <div class="partner-card fade-in">
+                    <div>
+                        <div class="partner-logo">🏫</div>
+                        <div class="partner-name">Sekolah</div>
+                    </div>
+                </div>
+                <div class="partner-card fade-in">
+                    <div>
+                        <div class="partner-logo">🏢</div>
+                        <div class="partner-name">UMKM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title" style="color: white;">Ekosistem Sirkular yang Menguntungkan Semua</h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">Setiap stakeholder mendapatkan manfaat dari sistem yang kami bangun</p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card fade-in">
+                    <span class="impact-icon">🏡</span>
+                    <h3>Rumah Tangga</h3>
+                    <p>Lingkungan lebih bersih, bebas dari bau dan hama. Dapatkan kompos untuk tanaman dan nilai ekonomis dari sampah anorganik.</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <span class="impact-icon">🌾</span>
+                    <h3>Petani & Desa</h3>
+                    <p>Akses mudah ke kompos berkualitas untuk meningkatkan produktivitas pertanian dan penghasilan desa.</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <span class="impact-icon">🏭</span>
+                    <h3>Industri</h3>
+                    <p>Pasokan bahan baku daur ulang yang konsisten dan berkualitas untuk keberlanjutan produksi.</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <span class="impact-icon">🌍</span>
+                    <h3>Lingkungan</h3>
+                    <p>Mengurangi beban TPA, menurunkan emisi, dan menciptakan ekosistem yang lebih sehat untuk generasi mendatang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">👥 Tim Kami</div>
+                <h2 class="section-title">Dipimpin oleh Profesional Berpengalaman</h2>
+                <p class="section-subtitle">Tim yang berdedikasi untuk menciptakan perubahan nyata di Indonesia</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="team-avatar">👨‍💼</div>
+                    <h3>Founder & CEO</h3>
+                    <p class="team-role">Memimpin strategi, edukasi, dan eksekusi lapangan untuk pertumbuhan Komposia</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-avatar">🤝</div>
+                    <h3>Operations Manager</h3>
+                    <p class="team-role">Mengelola kemitraan dengan pengepul, desa, dan industri daur ulang</p>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-avatar">⚙️</div>
+                    <h3>Product Developer</h3>
+                    <p class="team-role">Mengembangkan inovasi produk Teba dan eco enzym berkualitas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">📞 Hubungi Kami</div>
+                <h2 class="section-title">Mari Mulai Perjalanan Menuju Lingkungan Lebih Bersih</h2>
+                <p class="section-subtitle">Tim kami siap membantu Anda mengelola sampah dengan cara yang berkelanjutan</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info-box fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon-box">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@komposia.id<br>support@komposia.id</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-box">📱</div>
+                        <div class="contact-details">
+                            <h4>Telepon & WhatsApp</h4>
+                            <p>+62 812 3456 7890<br>Senin - Sabtu, 08:00 - 17:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-box">📍</div>
+                        <div class="contact-details">
+                            <h4>Alamat Kantor</h4>
+                            <p>Jl. Lingkungan Hijau No. 123<br>Jakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                        <a href="#home" class="cta-button" style="width: 100%; justify-content: center; background: #2d5016; color: white;">Mulai Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="map-container fade-in">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.23165502516!2d106.68942995!3d-6.229386599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sid!2sid!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Komposia</h3>
+                <p>Membangun ekosistem ekonomi sirkular dari rumah dan desa. Bersama menciptakan Indonesia yang lebih bersih, sehat, dan berkelanjutan.</p>
+                <div class="social-links">
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="LinkedIn">💼</a>
+                    <a href="#" title="WhatsApp">💬</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#solution">Komposia Teba</a></li>
+                    <li><a href="#solution">Komposia Angkut</a></li>
+                    <li><a href="#partners">Kemitraan</a></li>
+                    <li><a href="#achievements">Pencapaian</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Perusahaan</h4>
+                <ul>
+                    <li><a href="#team">Tentang Kami</a></li>
+                    <li><a href="#team">Tim</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                    <li><a href="#impact">Dampak</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Komposia. Semua hak dilindungi undang-undang.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
