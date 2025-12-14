@@ -11,6 +11,10 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Navigation */
 nav {
     position: fixed;
@@ -748,7 +752,7 @@ nav.scrolled {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    height: 500px;
+    /* height: 500px; */
 }
 
 .map-container iframe {
@@ -756,6 +760,97 @@ nav.scrolled {
     height: 100%;
     border: none;
 }
+
+
+/* Gallery Section */
+.gallery {
+    padding: 6rem 3rem;
+    background: white;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 4/3;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(45, 80, 22, 0.25);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.gallery-placeholder {
+    font-size: 5rem;
+    opacity: 0.3;
+    transition: all 0.4s ease;
+}
+
+.gallery-item:hover .gallery-placeholder {
+    opacity: 0.1;
+    transform: scale(1.2);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 70%, transparent 100%);
+    color: white;
+    padding: 2.5rem 2rem 2rem;
+    transform: translateY(100%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.gallery-overlay p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.5;
+}
+
+/* Alternative hover effect - text from top */
+.gallery-item.alt-style .gallery-overlay {
+    top: 0;
+    bottom: auto;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 70%, transparent 100%);
+    transform: translateY(-100%);
+}
+
+.gallery-item.alt-style:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
 
 /* Footer */
 footer {
@@ -914,8 +1009,25 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .problem-stats-visual, .problem-grid {
+        grid-template-columns: 1fr;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .gallery-overlay {
+        transform: translateY(0);
+        background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 60%, transparent 100%);
+    }
+    
+    .gallery-placeholder {
+        font-size: 4rem;
     }
 }
 
