@@ -937,6 +937,10 @@ footer {
     color: white;
 }
 
+.social-img {
+    width: 45px;
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
