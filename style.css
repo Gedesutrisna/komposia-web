@@ -467,7 +467,7 @@ nav.scrolled {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
     margin-top: 4rem;
 }
@@ -1079,4 +1079,73 @@ footer {
 .fade-in.appear {
     opacity: 1;
     transform: translateY(0);
+}
+
+.specs-box {
+    background: #f0f5e9;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #2d5016;
+}
+
+.specs-header {
+    font-weight: 700;
+    color: #2d5016;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs-list li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.specs-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #2d5016;
+    font-weight: bold;
+}
+
+.space-required {
+    background: #fafbf8;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 4px solid #4a7c2c;
+}
+
+.space-required p {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive untuk specs-box */
+@media (max-width: 768px) {
+    .specs-box, .space-required {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .specs-header {
+        font-size: 0.95rem;
+    }
+
+    .specs-list li {
+        font-size: 0.9rem;
+        padding-left: 1.2rem;
+    }
 }
