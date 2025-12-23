@@ -91,7 +91,8 @@ nav.scrolled {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(135deg, #1a3d0f 0%, #2d5016 50%, #4a7c2c 100%);
+    /* background: linear-gradient(135deg, #1a3d0f 0%, #2d5016 50%, #4a7c2c 100%); */
+    background: #1a3d0f;
     display: grid;
     align-items: center;
     gap: 4rem;
@@ -329,7 +330,8 @@ nav.scrolled {
 }
 
 .achievement-card {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 14px;
     text-align: center;
@@ -444,7 +446,8 @@ nav.scrolled {
 .stat-card-large .stat-number {
     font-size: 3.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #2d5016, #4a7c2c);
+    /* background: linear-gradient(135deg, #2d5016, #4a7c2c); */
+    background: #2d5016;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5rem;
@@ -470,7 +473,8 @@ nav.scrolled {
 }
 
 .service-card {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    /* background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); */
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 14px;
     transition: all 0.4s;
@@ -511,7 +515,8 @@ nav.scrolled {
 .service-icon-box {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #2d5016, #4a7c2c);
+    /* background: linear-gradient(135deg, #2d5016, #4a7c2c); */
+    background: #2d5016;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -610,7 +615,8 @@ nav.scrolled {
 /* Impact Section */
 .impact {
     padding: 6rem 3rem;
-    background: linear-gradient(135deg, #1a3d0f 0%, #2d5016 100%);
+    /* background: linear-gradient(135deg, #1a3d0f 0%, #2d5016 100%); */
+    background: #1a3d0f;
     color: white;
 }
 
@@ -666,7 +672,8 @@ nav.scrolled {
 }
 
 .team-member {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
+    background: #f8f9fa;
     padding: 2rem;
     border-radius: 14px;
     text-align: center;
@@ -684,7 +691,8 @@ nav.scrolled {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+    /* background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%); */
+    background: #2d5016;
     margin: 0 auto 2rem;
     display: flex;
     align-items: center;
@@ -751,7 +759,8 @@ nav.scrolled {
 .contact-icon-box {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #2d5016, #4a7c2c);
+    /* background: linear-gradient(135deg, #2d5016, #4a7c2c); */
+    background: #2d5016;
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -821,7 +830,7 @@ nav.scrolled {
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
-    background: linear-gradient(135deg, #5a8c35 0%, #2d5016 100%);;
+    /* background: linear-gradient(135deg, #5a8c35 0%, #2d5016 100%);; */
 }
 
 .gallery-placeholder {
